@@ -19,6 +19,7 @@
         </div>
     </header>  
     <section class="about">
+      <canvas class="orb-canvas" id="orb-canvas"></canvas>
       <div class="about__info animate__animated animate__fadeInLeft animate__slow"> <!--Подключение Animate-->
         <h1>Солнечные панели GreenRobotic</h1>
         <p>Производите дешёвую экологически чистую электроэнергию из солнечного света</p>
@@ -32,17 +33,23 @@
     <section class="features" id="features">
       <div class="cards">
         <div class="card">
-          <div class="card__logo"><font color=#ffb406><i class="fa-solid fa-solar-panel"></i></font></div> <!--<font></font> меняет цвет иконок-->
+          <div class="card__logo yellow">
+            <i class="fa-solid fa-solar-panel"></i>
+          </div>
           <h3>Уменьшите счета за электричество</h3>
           <p>Используйте чистую солнечную энергию для питания своего дома: уменьшите зависимость от электросети и счета за электричество.</p>
         </div>
         <div class="card">
-          <div class="card__logo"><font color=#ad1714>24/7</font></div>
+          <div class="card__logo red">
+            24/7
+          </div>
           <h3>Мониторинг электроэнергии</h3>
           <p>Управляйте своей системой солнечных панелей из любой точки мира с помощью специального мобильного приложения.</p>
         </div>
         <div class="card">
-          <div class="card__logo"><font color=#22a030><i class="fa-solid fa-chart-line"></i></font></div>
+          <div class="card__logo green">
+            <i class="fa-solid fa-chart-line"></i>
+          </div>
           <h3>Максимальная эффективность</h3>
           <p>Солнечные панели GreenRobotic обеспечивают максимальное производство энергии круглый год, даже на крышах со сложными углами.</p>
         </div>
@@ -69,11 +76,13 @@
       <section class="promo">
         <div class="promo__image"></div>
         <div class="promo__right">
-          <div class="promo__right__card">
+          <div class="promo__text">
             <h2>Зарядите свой дом</h2>
-            <p><span class="circle"></span>Солнечные панели сертифицированы мировыми экспертами: система безопасна и надежна.</p>
-            <p><span class="circle"></span>Следите за накоплением энергии вашего дома в режиме реального времени и настраивайте процент расхода и накопления энергии.</p>
-            <button>Заказать<span class="promo__right__card__icon"><i class="fa-solid fa-chevron-right"></i></span></button>
+            <p>Солнечные панели сертифицированы мировыми экспертами: система безопасна и надежна.</p>
+            <p>Следите за накоплением энергии вашего дома в режиме реального времени и настраивайте процент расхода и накопления энергии.</p>
+            <div class="promo__button-wrap">
+              <button type="button">Заказать<span><i class="fa-solid fa-chevron-right"></i></span></button>
+            </div>
           </div>
         </div>
       </section>
@@ -139,5 +148,6 @@
       </div>
     </footer>
     <script src="fontawesome/js/all.min.js"></script> <!--Иконка на кнопке-->
+    <script src="js/canvas.js"></script> <!--Добавление JavaScript-файла в лендинг-->
 </body>
 </html>
